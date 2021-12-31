@@ -1,0 +1,429 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8882767100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "TC-001 Create New User/SignUp",
+        "description": "",
+        "id": "signup,-sign-in-and-purchase-product;tc-001-create-new-user/signup",
+        "after": [
+          {
+            "result": {
+              "duration": 1209870000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 162472000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on home page",
+            "match": {
+              "location": "OnlineShoppingSteps.iAmOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1638297600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Navigate to SignUp page",
+            "match": {
+              "location": "OnlineShoppingSteps.navigateToSignUpPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2668937300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "create an account with random username",
+            "match": {
+              "location": "OnlineShoppingSteps.createAnAccountWithRandomUsername(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "krishna",
+                  "Patel",
+                  "abc12456",
+                  "123 Abc Street",
+                  "London",
+                  "Florida",
+                  "12345",
+                  "01234567890"
+                ],
+                "line": 8
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5837129000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "TC-002 Sign In with newly created user credentials",
+        "description": "",
+        "id": "signup,-sign-in-and-purchase-product;tc-002-sign-in-with-newly-created-user-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 1198633100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1517043600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I am on the Sign In Page",
+            "match": {
+              "location": "OnlineShoppingSteps.iAmOnTheSignInPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1509997100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Login using newly create credentials",
+            "match": {
+              "location": "OnlineShoppingSteps.loginUsingNewlyCreateCredentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1005862900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I shall verify the address information in my address section",
+            "match": {
+              "location": "OnlineShoppingSteps.iShallVerifyTheAddressInformationInMyAddressSection()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 10,
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4767092100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "TC-003 Add product to Online Cart and checkout",
+        "description": "",
+        "id": "signup,-sign-in-and-purchase-product;tc-003-add-product-to-online-cart-and-checkout",
+        "after": [
+          {
+            "result": {
+              "duration": 944410900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1432454200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I am on the Sign In Page",
+            "match": {
+              "location": "OnlineShoppingSteps.iAmOnTheSignInPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1655139600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Login using newly create credentials",
+            "match": {
+              "location": "OnlineShoppingSteps.loginUsingNewlyCreateCredentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10438099900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I add below product to cart",
+            "match": {
+              "location": "OnlineShoppingSteps.iAddBelowProductToCart(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "category",
+                  "subCategory",
+                  "name",
+                  "model",
+                  "quantity"
+                ],
+                "line": 21
+              },
+              {
+                "cells": [
+                  "Dresses",
+                  "CASUAL DRESSES",
+                  "Printed Dress",
+                  "demo_3",
+                  "2"
+                ],
+                "line": 22
+              },
+              {
+                "cells": [
+                  "Women",
+                  "TOPS",
+                  "Faded Short Sleeve T-shirts",
+                  "demo_1",
+                  "3"
+                ],
+                "line": 23
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2732491500,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I shall validate shopping cart as below",
+            "match": {
+              "location": "OnlineShoppingSteps.iShallValidateShoppingCartAsBelow(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "model",
+                  "quantity"
+                ],
+                "line": 25
+              },
+              {
+                "cells": [
+                  "Printed Dress",
+                  "SKU : demo_3",
+                  "2"
+                ],
+                "line": 26
+              },
+              {
+                "cells": [
+                  "Faded Short Sleeve T-shirts",
+                  "SKU : demo_1",
+                  "3"
+                ],
+                "line": 27
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7090254600,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I shall be able to Buy the product",
+            "match": {
+              "location": "OnlineShoppingSteps.iShallBeAbleToBuyTheProduct()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 33798100,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I shall be able to Buy using cheque payment",
+            "match": {
+              "location": "OnlineShoppingSteps.iShallBeAbleToBuyUsingChequePayment()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 16,
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5293700600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "TC-004 Contact customer service for the previous successful order",
+        "description": "",
+        "id": "signup,-sign-in-and-purchase-product;tc-004-contact-customer-service-for-the-previous-successful-order",
+        "after": [
+          {
+            "result": {
+              "duration": 1166710700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2101721800,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I am on the Sign In Page",
+            "match": {
+              "location": "OnlineShoppingSteps.iAmOnTheSignInPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2217756500,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "Login using newly create credentials",
+            "match": {
+              "location": "OnlineShoppingSteps.loginUsingNewlyCreateCredentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9083567300,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I am on the contact page",
+            "match": {
+              "location": "OnlineShoppingSteps.iAmOnTheContactPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1297668400,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I send refund request to customer care for previous order",
+            "match": {
+              "location": "OnlineShoppingSteps.iSendRefundRequestToCustomerCareForPreviousOrder()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 31,
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "SignUp, Sign In and Purchase Product",
+    "description": "",
+    "id": "signup,-sign-in-and-purchase-product",
+    "keyword": "Feature",
+    "uri": "onlineshopping.feature"
+  }
+]
